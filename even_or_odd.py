@@ -4,7 +4,7 @@ def even_or_odd():
     # Author: Bruce LaBounty
     # Date: 1/20/2025
 
-    num = int(input("Please enter a number: "))
+    num = int(input("Please enter a whole number: "))
 
     if(num % 2 == 0):
         print("Your number is even.")
