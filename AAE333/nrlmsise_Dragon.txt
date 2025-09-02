@@ -1,33 +1,3 @@
-ModelWeb Browser Results
-
-nrlmsise model listing
-Required input parameters
-Year= 2021, Month=  1, Day=  1, Hour= 1.50,
-Time_type = Universal
-Coordinate_type = Geographic
-Latitude=   55.00, Longitude=   45.00, Height=   100.00
-Prof. parameters: Start=     0.00 Stop=   300.00 Step=     5.00
-
-Optional input parameters:
-
-Sunspot number(Rz12) =not specified
-Ionospheric index(IG12) =not specified
-Upper limit for Electron content = not specified
-F peak model =  
-Ne Topside =  
-foF2 Storm model =  
-Bottomside Thickness =  
-F1 occurrence probability =  
-D-Region Ne =  
-Topside Te =  
-Ion Composition =  
-
-Selected output parameters:
-1  Height, km
-2  N2, cm-3
-3  O2, cm-3
-
-1         2         3         
 0.0		2.096E+19	5.623E+18
 5.0		1.218E+19	3.269E+18
 10.0	6.457E+18	1.732E+18
