@@ -9,11 +9,11 @@ import matplotlib.pyplot as plt
 char_length = 4 * 100 # Characteristic Length (cm)
 
 # Extracting data from file
-data = np.loadtxt(r"C:\Users\bruce\Documents\src\AAE301\coding_projects\AAE333\nrlmsise_Dragon.txt")
+data = np.loadtxt(r"AAE333\nrlmsise_Dragon.txt")
 
 height = data[:, 0] # Altitude (km)
-N2 = data[:, 1] # Number Density for diatomic Nitrogen (cm^3)
-O2 = data[:, 2] # Number Density for diatomic Oxygen (cm^3)
+N2 = data[:, 1] # Number Density for diatomic Nitrogen (cm-3)
+O2 = data[:, 2] # Number Density for diatomic Oxygen (cm-3)
 
 # Calculating Mean Free Path (MFP)
 d_N2 = 36e-7 # Diameter of diatomic Nitrogen (cm)
