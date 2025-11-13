@@ -13,7 +13,7 @@ f_t = t_wrapped * np.sin(t_wrapped)
 
 Re_t = np.zeros_like(t)
 Im_t = np.zeros_like(t)
-N = 10
+N = 2
 
 # Use t_wrapped in Fourier terms so both functions are on same periodic domain
 for k in range(2, N+1):

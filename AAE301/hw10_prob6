@@ -1,0 +1,32 @@
+# AAE 301: Signals Homework 10
+# Problem 6
+# Author: Bruce LaBounty
+
+import sympy
+
+# Initialization
+A_matrix = sympy.Matrix([
+        [-3, -6, -10, 10],
+        [1, -1, 0, 0],
+        [0, 1, -2, 3],
+        [0, 0, 1, -2]
+])
+
+B_matrix = sympy.Matrix([
+            [1],
+            [0],
+            [0],
+            [0]
+])
+
+C_matrix = sympy.Matrix([[1, -4, -2, 10]])
+
+# Problem i)
+s = sympy.symbols('s')
+
+N = (s*sympy.eye(4) - A_matrix).inv()
+
+G = (C_matrix*N*B_matrix).expand()
+G.simplify()
+
+print(G)
