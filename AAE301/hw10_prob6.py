@@ -3,6 +3,7 @@
 # Author: Bruce LaBounty
 
 import sympy
+import control
 
 # Initialization
 A_matrix = sympy.Matrix([
@@ -30,3 +31,13 @@ G = (C_matrix*N*B_matrix).expand()
 G.simplify()
 
 print(G)
+
+# McMillan Degree Calculation (Also includes problem ii)
+num = [1, 1, -13, 3] # s^3 + s^2 - 13s + 3
+den = [1, 8, 26, 50, 19] # s^4 + 8s^3 +26s^2 + 50s + 19
+sys = control.tf(num, den)
+
+sys_min = control.minreal(sys)
+print(sys_min)
+
+# Problem iii)
