@@ -1,4 +1,4 @@
-# AAE 334 Homework 3 Problem 2 (Using Python)
+# AAE 334 Homework 3 (Using Python)
 # Author: Bruce LaBounty
 
 import numpy as np
